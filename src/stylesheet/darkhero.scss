@@ -1,0 +1,330 @@
+@import 'variables';
+
+.dark-hero{
+}
+.dark-radius{
+    background-color: #000;
+
+    border-radius: 6em;
+    @media (max-width: $layout-breakpoint-medium) {
+      padding: 0;
+      
+  }
+  
+  @media (max-width: $layout-breakpoint-small) {
+  
+  }
+}
+
+.dark-hero-grid{
+    padding: 6em;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    gap: 1em;
+    @media (max-width: $layout-breakpoint-medium) {
+      padding: 2em;
+      grid-template-columns: repeat(1,100%);
+  }
+
+  @media (max-width: $layout-breakpoint-small) {
+     padding: 1em;
+  }
+}
+
+.block1{
+    display: flex;
+    flex-direction:column;
+    color: $white;
+    padding: 1em 15em 1em 2em;
+    text-align: left;
+  font-family:  $main-font;
+  gap: 1em;
+  @media (max-width: $layout-breakpoint-medium) {
+    padding: .1em .1em .1em .2em;
+    
+}
+
+@media (max-width: $layout-breakpoint-small) {
+
+}
+}
+.block1-title{
+    letter-spacing: -.04em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 7em;
+  font-weight: lighter;
+  line-height: 1.2em;
+  @media (max-width: $layout-breakpoint-medium) {
+    font-size: 7em;
+    
+}
+
+@media (max-width: 650px) {
+  font-size: 4em;
+  line-height: 1.3em;
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  font-size: 3em;
+  line-height: 1.5em;
+ padding: 1.5em .3em .3em .1em;
+}
+  >h2{
+    margin: 0;
+  }
+}
+.block1-sub-title{
+margin-bottom: 31.7em;
+  font-size: 1.8em;
+  margin: 0;
+}
+.block1-desc{
+    letter-spacing: -.02em;
+    margin-bottom: 0;
+    font-size: 1.6em;
+    line-height: 1.5;
+}
+.block1-list{
+    list-style-type: none;
+    padding: 0;
+}
+.block1-list > li{
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    gap: .5em;
+    font-size:  1.5em;
+}
+.block1-list > li > img{
+width: 1.5em;
+}
+
+.block1-button > button{
+    grid-column-gap: .5em;
+    grid-row-gap: .5em;
+    background-color: $blue-violet-2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(135deg, #5546ff, rgba(122, 64, 238, 0));
+    border-radius: .75rem;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em 1.5em;
+    font-size: 1.7em;
+    line-height: 1.5rem;
+    transition: background-color .2s ease-in-out;
+    display: flex;
+        background-image: linear-gradient(173deg, #303237, #2525bd 63%, #a17cf1);
+    }
+
+.block2{
+  padding: 2em;
+}
+.block2 img{
+max-width: 80%;
+@media (max-width: $layout-breakpoint-medium) {
+  min-height: 30em;
+  max-width:90%;
+  
+}
+
+@media (max-width: $layout-breakpoint-small) {
+
+}
+}
+
+.footer{
+  padding: 5em 4em 2em 4em;
+  display: flex;
+  flex-direction:column;
+  gap: 4em;
+  @media (max-width: $layout-breakpoint-medium) {
+    padding: 2em 1em 1em 1em;
+    
+  }
+  
+  @media (max-width: $layout-breakpoint-small) {
+  
+  }
+}
+
+
+.stack{
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction:column;
+}
+.stack-title{
+margin-bottom: 1.5em;
+>h2 {
+	letter-spacing: -.04em;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: Opensauceone, sans-serif;
+	font-size: 70px;
+	font-weight: 300;
+	line-height: 1.2;
+}
+}
+.stack-list{
+  flex-wrap: wrap;
+  align-items: flex-start;
+  display: flex;
+  padding: .5em 13em 1em .5em;
+  @media (max-width: $layout-breakpoint-medium) {
+   padding: .5em;
+     align-items: center;
+   }
+   
+   @media (max-width: $layout-breakpoint-small) {
+   
+   }
+  button{
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: .5em;
+    align-items: center;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    margin-right: .5em;
+    padding: 1em 1.5em;
+    font-family: 'Opensauceone', sans-serif;
+    font-size: 1.75em;
+    font-weight: 300;
+    line-height: 1.5em;
+    text-decoration: none;
+    transition: color .2s, background-color .2s ease-in-out;
+    display: flex;
+    position: relative;
+    @media (max-width: $layout-breakpoint-medium) {
+      font-size: 1.2em;
+       
+     }
+     
+     @media (max-width: $layout-breakpoint-small) {
+     
+     }
+  }
+  button:nth-child(even){
+    border-radius: 5em;
+  }
+  button:hover{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #000;
+  }
+}
+.copyright{
+display: grid;
+grid-template-columns: 1fr 1fr;
+font-family: $main-font;
+@media (max-width: $layout-breakpoint-medium) {
+  grid-template-columns: 1fr;
+  
+}
+
+@media (max-width: $layout-breakpoint-small) {
+
+}
+}
+
+.copyright > div:first-child{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  @media (max-width: $layout-breakpoint-medium) {
+   flex-direction: column;
+   gap: 1em;
+     
+   }
+   
+   @media (max-width: $layout-breakpoint-small) {
+   gap: 1em;
+   }
+}
+.copyright .img{
+  background-color: #000;
+  padding: .5em;
+}
+.copyright > div:first-child >ul{
+  display: flex;
+  list-style-type: none;
+  padding: 1em;
+  padding-left: 2em;
+  border-left: 1px solid black;
+  margin-left: 2em;
+  @media (max-width: $layout-breakpoint-medium) {
+    flex-direction: column;
+     padding: .5em;
+     margin: 0;
+     border: 0;
+   }
+   
+   @media (max-width: $layout-breakpoint-small) {
+   
+   }
+>li{
+  margin-left: 1em;
+  line-height: 2rem;
+  font-size: 1.4em;
+  cursor: pointer;
+  @media (max-width: $layout-breakpoint-medium) {
+   font-size: 1.2em;
+   text-align: center;
+   margin: 0;
+   margin-top: 1em;
+    
+  }
+  
+  @media (max-width: $layout-breakpoint-small) {
+  
+  }
+}
+}
+
+.copyright > div:last-child{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+ margin: 0;
+ @media (max-width: $layout-breakpoint-medium) {
+  justify-content: center;
+  
+}
+@media (max-width: 600px) {
+flex-direction: column;
+margin: 0;
+}
+@media (max-width: $layout-breakpoint-small) {
+
+}
+}
+  .copyright > div:last-child >p:first-child{
+    font-size: 1.4em;
+    @media (max-width: $layout-breakpoint-medium) {
+      font-size: 1.2em;
+       
+     }
+     
+     @media (max-width: $layout-breakpoint-small) {
+     margin: 0;
+     }
+  }
+  .copyright > div:last-child >p:last-child{
+    font-size: 1.3em;
+    color: $dim-grey;
+    @media (max-width: $layout-breakpoint-medium) {
+      font-size: 1.2em;
+       
+     }
+     
+     @media (max-width: $layout-breakpoint-small) {
+     margin:0;
+     }
+  }
+
